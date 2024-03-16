@@ -233,8 +233,9 @@ const Myfollowingusers = () => {
     {/* THIS IS ALL DATA STARTS HERE */}
     <div className=' w-full px-2 flex flex-wrap justify-center md:gap-3 md:mt-2'>
         {/* CARD OF THE DATA STARTS HERE */}
-        <div  className='shadow-xl shadow-gray-500 w-full md:w-[30%] h-[430px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-gray-700'>
+        <div  className='shadow-xl shadow-yellow-700 w-full md:w-[30%] h-[470px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-yellow-800 bg-yellow-500 text-white'>
           <Link to='/fulldetail'>
+            <div className='text-xl font-bold text-center py-1 text-black'>Featured Post</div>
             <div className='overflow-hidden w-full h-[300px]'>
             <img src='https://www.decorilla.com/online-decorating/wp-content/uploads/2023/05/correcto.jpg' />
             </div>
@@ -246,7 +247,7 @@ const Myfollowingusers = () => {
             </p>
             <p className='ml-2 text-sm'>sector 21 , gurugram</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -279,7 +280,7 @@ const Myfollowingusers = () => {
             </p>
             <p className='ml-2 text-sm'>sector 21 , gurugram</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>

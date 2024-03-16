@@ -22,7 +22,7 @@ const MyFavourite = () => {
                 <span>Bangalore</span>
             </p>
             <p className='text-sm ml-2'>kingfisher tower block c , bangalore</p>
-            <p className='w-[55%] m-auto bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg mt-2 text-center cursor-pointer'>
+            <p className='w-[70%] md:w-[55%] m-auto bg-red-600 hover:bg-red-500 text-white py-1 rounded-lg mt-2 text-center cursor-pointer'>
               <span>Remove From Favourites</span>
             </p>
         </Link>

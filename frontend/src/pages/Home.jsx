@@ -187,7 +187,7 @@ const Home = () => {
 
       <span className='text-2xl font-bold text-white flex justify-center py-4  mt-24 md:mt-12 mb-6'>Select Electronics Type</span>
       <select value={electronictype} onChange={(e)=>setElectronicType(e.target.value)} className='flex w-[70%] md:w-[25%] m-auto rounded-lg bg-white p-2' onClick={(e) => e.stopPropagation()}>
-      <option>All</option>
+      <option value='allelectronics'>All</option>
       <option>Electronics</option>
       <option>other</option>
     </select>
@@ -212,7 +212,7 @@ const Home = () => {
 
       <span className='text-2xl font-bold text-white flex justify-center py-4  mt-24 md:mt-12 mb-6'>Select Other Type</span>
       <select value={othertype} onChange={(e)=>setOtherType(e.target.value)} className='flex w-[70%] md:w-[25%] m-auto rounded-lg bg-white p-2' onClick={(e) => e.stopPropagation()}>
-      <option>All</option>
+      <option value='allothers'>All</option>
       <option>Accessories</option>
       <option>Outfits</option>
       <option>Other</option>
@@ -233,7 +233,77 @@ const Home = () => {
     {/* THIS IS ALL DATA STARTS HERE */}
     <div className=' w-full px-2 flex flex-wrap justify-center md:gap-3 md:mt-2'>
         {/* CARD OF THE DATA STARTS HERE */}
-        <div  className='shadow-xl shadow-gray-500 w-full md:w-[30%] h-[430px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-gray-700'>
+        <div  className='shadow-xl shadow-yellow-700 w-full md:w-[30%] h-[470px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-yellow-800 bg-yellow-500 text-white'>
+          <Link to='/fulldetail'>
+            <div className='text-center text-black py-1 font-bold text-xl'>Featured Post</div>
+            <div className='overflow-hidden w-full h-[300px]'>
+            <img src='https://blog.newhomesource.com/wp-content/uploads/2019/09/farmhouse.jpg.webp' />
+            </div>
+            <p className='ml-2 text-sm'>Big farmhouse available for rent</p>
+            <p className='text-sm ml-2'><span className='font-bold text-black mr-2'>Rent:</span>85000</p>
+            <p className='flex items-center ml-[6px] text-sm'>
+                <span className='text-red-700'><IoLocationSharp/></span>
+                <span>Lonwala</span>
+            </p>
+            <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
+            </Link>
+            <p className='w-[70%] md:w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+              {
+                fav ? 
+                <>
+                <span className='text-red-600'><FaHeart/></span>
+                <span className='text-red-600'>Remove from Favourites</span>
+                </>
+                :
+                <>
+                <span><FaHeart/></span>
+                <span >Add to Favourites</span>
+                </>
+              }
+             
+            </p>
+        </div>
+        {/* CARD OF THE DATA ENDS HERE */}
+
+
+
+              {/* CARD OF THE DATA STARTS HERE */}
+              <div  className='shadow-xl shadow-yellow-700 w-full md:w-[30%] h-[470px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-yellow-800 bg-yellow-500 text-white'>
+          <Link to='/fulldetail'>
+            <div className='text-center text-black py-1 font-bold text-xl'>Featured Post</div>
+            <div className='overflow-hidden w-full h-[300px]'>
+            <img src='https://blog.newhomesource.com/wp-content/uploads/2019/09/farmhouse.jpg.webp' />
+            </div>
+            <p className='ml-2 text-sm'>Big farmhouse available for rent</p>
+            <p className='text-sm ml-2'><span className='font-bold text-black mr-2'>Rent:</span>85000</p>
+            <p className='flex items-center ml-[6px] text-sm'>
+                <span className='text-red-700'><IoLocationSharp/></span>
+                <span>Lonwala</span>
+            </p>
+            <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
+            </Link>
+            <p className='w-[70%] md:w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+              {
+                fav ? 
+                <>
+                <span className='text-red-600'><FaHeart/></span>
+                <span className='text-red-600'>Remove from Favourites</span>
+                </>
+                :
+                <>
+                <span><FaHeart/></span>
+                <span >Add to Favourites</span>
+                </>
+              }
+             
+            </p>
+        </div>
+        {/* CARD OF THE DATA ENDS HERE */}
+
+
+
+                {/* CARD OF THE DATA STARTS HERE */}
+                <div  className='shadow-xl shadow-gray-500 w-full md:w-[30%] h-[430px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-gray-700'>
           <Link to='/fulldetail'>
             <div className='overflow-hidden w-full h-[300px]'>
             <img src='https://blog.newhomesource.com/wp-content/uploads/2019/09/farmhouse.jpg.webp' />
@@ -246,7 +316,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -278,7 +348,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -310,7 +380,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -342,7 +412,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -374,7 +444,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -406,7 +476,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -438,7 +508,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>
@@ -470,71 +540,7 @@ const Home = () => {
             </p>
             <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
             </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
-              {
-                fav ? 
-                <>
-                <span className='text-red-600'><FaHeart/></span>
-                <span className='text-red-600'>Remove from Favourites</span>
-                </>
-                :
-                <>
-                <span><FaHeart/></span>
-                <span >Add to Favourites</span>
-                </>
-              }
-             
-            </p>
-        </div>
-        {/* CARD OF THE DATA ENDS HERE */}
-
-                {/* CARD OF THE DATA STARTS HERE */}
-                <div  className='shadow-xl shadow-gray-500 w-full md:w-[30%] h-[430px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-gray-700'>
-          <Link to='/fulldetail'>
-            <div className='overflow-hidden w-full h-[300px]'>
-            <img src='https://blog.newhomesource.com/wp-content/uploads/2019/09/farmhouse.jpg.webp' />
-            </div>
-            <p className='ml-2 text-sm'>Big farmhouse available for rent</p>
-            <p className='text-sm ml-2'><span className='font-bold text-black mr-2'>Rent:</span>85000</p>
-            <p className='flex items-center ml-[6px] text-sm'>
-                <span className='text-red-700'><IoLocationSharp/></span>
-                <span>Lonwala</span>
-            </p>
-            <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
-            </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
-              {
-                fav ? 
-                <>
-                <span className='text-red-600'><FaHeart/></span>
-                <span className='text-red-600'>Remove from Favourites</span>
-                </>
-                :
-                <>
-                <span><FaHeart/></span>
-                <span >Add to Favourites</span>
-                </>
-              }
-             
-            </p>
-        </div>
-        {/* CARD OF THE DATA ENDS HERE */}
-
-                {/* CARD OF THE DATA STARTS HERE */}
-                <div  className='shadow-xl shadow-gray-500 w-full md:w-[30%] h-[430px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-gray-700'>
-          <Link to='/fulldetail'>
-            <div className='overflow-hidden w-full h-[300px]'>
-            <img src='https://blog.newhomesource.com/wp-content/uploads/2019/09/farmhouse.jpg.webp' />
-            </div>
-            <p className='ml-2 text-sm'>Big farmhouse available for rent</p>
-            <p className='text-sm ml-2'><span className='font-bold text-black mr-2'>Rent:</span>85000</p>
-            <p className='flex items-center ml-[6px] text-sm'>
-                <span className='text-red-700'><IoLocationSharp/></span>
-                <span>Lonwala</span>
-            </p>
-            <p className='ml-2 text-sm'>main road behind NH road , lonwala</p>
-            </Link>
-            <p className='w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
+            <p className='w-[70%] md:w-[55%] m-auto flex items-center gap-2 justify-center py-1 rounded-lg mt-2 border-2 border-black' onClick={handlefav}>
               {
                 fav ? 
                 <>

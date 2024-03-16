@@ -10,7 +10,7 @@ const Featureincity = () => {
 
     <div className='md:border-2 md:w-[50%] m-auto md:mt-2 pb-12 md:pb-1'>
         
-    <div className='md:w-[40%] m-auto mt-1'>
+    <div className='md:w-[40%] mt-1 m-auto'>
         <img className="m-auto" src='https://housing-images.n7net.in/354cef8f/40d6f7643c39e7cb2f83b6be68c27645/v0/medium.jpg' />
     </div>
 
