@@ -60,10 +60,10 @@ const Navbar = () => {
 
     
      {/* COMMON NAVIGATION BAR STARTS HERE */}
-    <nav className='flex items-center justify-between bg-slate-700 text-white px-4 py-3 cursor-pointer sticky top-0 z-10'>
+    <nav className='bg-blue-500 flex items-center justify-between text-white px-4 py-3 cursor-pointer sticky top-0 z-10'>
       <span className='grid md:flex md:items-center gap-1 ml-[-10px] md:ml-0'>
         <span className='text-red-600 flex justify-center'><FaLocationDot/></span>
-        <span className='text-white text-sm'>current location</span>
+        <span className='text-sm'>current location</span>
       </span>
       <span className='flex items-center m-auto'>
         <Link to='/' className='font-bold text-xl'>demoProject</Link>

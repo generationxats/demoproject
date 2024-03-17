@@ -233,7 +233,7 @@ const Myfollowingusers = () => {
     {/* THIS IS ALL DATA STARTS HERE */}
     <div className=' w-full px-2 flex flex-wrap justify-center md:gap-3 md:mt-2'>
         {/* CARD OF THE DATA STARTS HERE */}
-        <div  className='shadow-xl shadow-yellow-700 w-full md:w-[30%] h-[470px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-yellow-800 bg-yellow-500 text-white'>
+        <div  className='shadow-xl shadow-yellow-700 w-full md:w-[30%] h-[470px]  mt-4 md:mt-2 overflow-hidden  hover:shadow-yellow-800 bg-yellow-400 text-black'>
           <Link to='/fulldetail'>
             <div className='text-xl font-bold text-center py-1 text-black'>Featured Post</div>
             <div className='overflow-hidden w-full h-[300px]'>
